@@ -76,6 +76,8 @@ extern const CGFloat OBMenuBarWindowArrowWidth;
    be notified when the user attaches or detaches the window from the menu bar.
  
  */
+
+@protocol OBMenuBarWindowDelegate;
  
 @interface OBMenuBarWindow : NSWindow
 {
@@ -91,6 +93,8 @@ extern const CGFloat OBMenuBarWindowArrowWidth;
     NSStatusItem *statusItem;
     OBMenuBarWindowIconView *statusItemView;
 }
+
+@property (weak, nonatomic) id<OBMenuBarWindowDelegate> obDelegate;
 
 /** Whether the window has an associated icon in the menu bar (default is `NO`).
  If this is `YES`, set the `menuBarIcon` property and optionally the
@@ -140,5 +144,11 @@ extern const CGFloat OBMenuBarWindowArrowWidth;
 
 /** Whether the menu bar icon is highlighted. */
 @property (nonatomic, assign) BOOL highlighted;
+
+@end
+
+@protocol OBMenuBarWindowDelegate <NSObject>
+
+- (void)obWindowDidAppear:(OBMenuBarWindow *)window;
 
 @end

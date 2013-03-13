@@ -8,8 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import "OBMenuBarWindow.h"
+#import <WebKit/WebKit.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject
+<
+NSApplicationDelegate,
+OBMenuBarWindowDelegate
+>
 
 @property (assign) IBOutlet OBMenuBarWindow *window;
 

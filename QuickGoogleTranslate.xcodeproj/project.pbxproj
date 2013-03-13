@@ -17,6 +17,10 @@
 		C181206216F0173300DB17F3 /* MenuBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C181206016F0173300DB17F3 /* MenuBarIcon.png */; };
 		C181206316F0173300DB17F3 /* MenuBarIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = C181206116F0173300DB17F3 /* MenuBarIcon2.png */; };
 		C181206516F01A0D00DB17F3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C181206416F01A0D00DB17F3 /* WebKit.framework */; };
+		C181206816F046BC00DB17F3 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = C181206716F046BC00DB17F3 /* TestView.m */; };
+		C181206C16F04CD100DB17F3 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C181206B16F04CD100DB17F3 /* DDHotKeyCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C181206E16F04CF200DB17F3 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C181206D16F04CF200DB17F3 /* Carbon.framework */; };
+		C181207016F0534900DB17F3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C181206F16F0534800DB17F3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,13 @@
 		C181206016F0173300DB17F3 /* MenuBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBarIcon.png; sourceTree = "<group>"; };
 		C181206116F0173300DB17F3 /* MenuBarIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBarIcon2.png; sourceTree = "<group>"; };
 		C181206416F01A0D00DB17F3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C181206616F046BC00DB17F3 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		C181206716F046BC00DB17F3 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		C181206A16F04CD100DB17F3 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		C181206B16F04CD100DB17F3 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		C181206D16F04CF200DB17F3 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		C181206F16F0534800DB17F3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		C181207116F056BD00DB17F3 /* ScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C181206E16F04CF200DB17F3 /* Carbon.framework in Frameworks */,
 				C181206516F01A0D00DB17F3 /* WebKit.framework in Frameworks */,
 				C181203F16F0165300DB17F3 /* Cocoa.framework in Frameworks */,
 			);
@@ -56,6 +68,7 @@
 		C181203216F0165300DB17F3 = {
 			isa = PBXGroup;
 			children = (
+				C181206F16F0534800DB17F3 /* README.md */,
 				C181204416F0165300DB17F3 /* QuickGoogleTranslate */,
 				C181203D16F0165300DB17F3 /* Frameworks */,
 				C181203C16F0165300DB17F3 /* Products */,
@@ -73,6 +86,7 @@
 		C181203D16F0165300DB17F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C181206D16F04CF200DB17F3 /* Carbon.framework */,
 				C181206416F01A0D00DB17F3 /* WebKit.framework */,
 				C181203E16F0165300DB17F3 /* Cocoa.framework */,
 				C181204016F0165300DB17F3 /* Other Frameworks */,
@@ -93,10 +107,13 @@
 		C181204416F0165300DB17F3 /* QuickGoogleTranslate */ = {
 			isa = PBXGroup;
 			children = (
+				C181206916F04CD100DB17F3 /* DDHotKey */,
 				C181205B16F0168200DB17F3 /* OBMenuBarWindow */,
 				C181205F16F0173300DB17F3 /* Resouces */,
 				C181205016F0165300DB17F3 /* AppDelegate.h */,
 				C181205116F0165300DB17F3 /* AppDelegate.m */,
+				C181206616F046BC00DB17F3 /* TestView.h */,
+				C181206716F046BC00DB17F3 /* TestView.m */,
 				C181205316F0165300DB17F3 /* MainMenu.xib */,
 				C181204516F0165300DB17F3 /* Supporting Files */,
 			);
@@ -127,10 +144,20 @@
 		C181205F16F0173300DB17F3 /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				C181207116F056BD00DB17F3 /* ScreenShot.png */,
 				C181206016F0173300DB17F3 /* MenuBarIcon.png */,
 				C181206116F0173300DB17F3 /* MenuBarIcon2.png */,
 			);
 			path = Resouces;
+			sourceTree = "<group>";
+		};
+		C181206916F04CD100DB17F3 /* DDHotKey */ = {
+			isa = PBXGroup;
+			children = (
+				C181206A16F04CD100DB17F3 /* DDHotKeyCenter.h */,
+				C181206B16F04CD100DB17F3 /* DDHotKeyCenter.m */,
+			);
+			path = DDHotKey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +216,7 @@
 				C181205516F0165300DB17F3 /* MainMenu.xib in Resources */,
 				C181206216F0173300DB17F3 /* MenuBarIcon.png in Resources */,
 				C181206316F0173300DB17F3 /* MenuBarIcon2.png in Resources */,
+				C181207016F0534900DB17F3 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +230,8 @@
 				C181204B16F0165300DB17F3 /* main.m in Sources */,
 				C181205216F0165300DB17F3 /* AppDelegate.m in Sources */,
 				C181205E16F0168200DB17F3 /* OBMenuBarWindow.m in Sources */,
+				C181206816F046BC00DB17F3 /* TestView.m in Sources */,
+				C181206C16F04CD100DB17F3 /* DDHotKeyCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
