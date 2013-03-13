@@ -3,9 +3,12 @@ Quick Google Translate
 
 ScreenShot:
 
-![ScreenShot](http://)
+![ScreenShot](http://github.com/ultragtx/QuickGoogleTranslate/blob/master/QuickGoogleTranslate/Resouces/ScreenShot.png?raw=true)
 
-Open Souce and **FREE**
+###Features:
+
+* Open Souce and **FREE**
+* OBMenuBarWindow Features check [this](https://github.com/obolton/OBMenuBarWindow)
 
 ###How to use:
 
