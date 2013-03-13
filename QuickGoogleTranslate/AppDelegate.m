@@ -67,10 +67,10 @@
 
 - (void)obWindowDidAppear:(OBMenuBarWindow *)window {
     // simulate a mouse event to focus on the webview
-    NSEvent *mouseEvent1 = [NSEvent mouseEventWithType:NSLeftMouseDown location:CGPointMake(310, 120) modifierFlags:0 timestamp:0 windowNumber:_window.windowNumber context:_window.graphicsContext eventNumber:0 clickCount:1 pressure:1];
+    NSEvent *mouseEvent1 = [NSEvent mouseEventWithType:NSLeftMouseDown location:CGPointMake(1, 1) modifierFlags:0 timestamp:0 windowNumber:_window.windowNumber context:_window.graphicsContext eventNumber:0 clickCount:1 pressure:1];
     [NSApp postEvent:mouseEvent1 atStart:NO];
     
-    NSEvent *mouseEvent2 = [NSEvent mouseEventWithType:NSLeftMouseUp location:CGPointMake(310, 120) modifierFlags:0 timestamp:0 windowNumber:_window.windowNumber context:_window.graphicsContext eventNumber:0 clickCount:1 pressure:1];
+    NSEvent *mouseEvent2 = [NSEvent mouseEventWithType:NSLeftMouseUp location:CGPointMake(1, 1) modifierFlags:0 timestamp:0 windowNumber:_window.windowNumber context:_window.graphicsContext eventNumber:0 clickCount:1 pressure:1];
     [NSApp postEvent:mouseEvent2 atStart:NO];
 
     NSLog(@"%@", _webView.mainFrameURL);
