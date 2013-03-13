@@ -13,6 +13,10 @@
 		C181204F16F0165300DB17F3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C181204D16F0165300DB17F3 /* Credits.rtf */; };
 		C181205216F0165300DB17F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C181205116F0165300DB17F3 /* AppDelegate.m */; };
 		C181205516F0165300DB17F3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C181205316F0165300DB17F3 /* MainMenu.xib */; };
+		C181205E16F0168200DB17F3 /* OBMenuBarWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C181205D16F0168200DB17F3 /* OBMenuBarWindow.m */; };
+		C181206216F0173300DB17F3 /* MenuBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C181206016F0173300DB17F3 /* MenuBarIcon.png */; };
+		C181206316F0173300DB17F3 /* MenuBarIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = C181206116F0173300DB17F3 /* MenuBarIcon2.png */; };
+		C181206516F01A0D00DB17F3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C181206416F01A0D00DB17F3 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,11 @@
 		C181205016F0165300DB17F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C181205116F0165300DB17F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C181205416F0165300DB17F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C181205C16F0168200DB17F3 /* OBMenuBarWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBMenuBarWindow.h; sourceTree = "<group>"; };
+		C181205D16F0168200DB17F3 /* OBMenuBarWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBMenuBarWindow.m; sourceTree = "<group>"; };
+		C181206016F0173300DB17F3 /* MenuBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBarIcon.png; sourceTree = "<group>"; };
+		C181206116F0173300DB17F3 /* MenuBarIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBarIcon2.png; sourceTree = "<group>"; };
+		C181206416F01A0D00DB17F3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C181206516F01A0D00DB17F3 /* WebKit.framework in Frameworks */,
 				C181203F16F0165300DB17F3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +73,7 @@
 		C181203D16F0165300DB17F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C181206416F01A0D00DB17F3 /* WebKit.framework */,
 				C181203E16F0165300DB17F3 /* Cocoa.framework */,
 				C181204016F0165300DB17F3 /* Other Frameworks */,
 			);
@@ -82,6 +93,8 @@
 		C181204416F0165300DB17F3 /* QuickGoogleTranslate */ = {
 			isa = PBXGroup;
 			children = (
+				C181205B16F0168200DB17F3 /* OBMenuBarWindow */,
+				C181205F16F0173300DB17F3 /* Resouces */,
 				C181205016F0165300DB17F3 /* AppDelegate.h */,
 				C181205116F0165300DB17F3 /* AppDelegate.m */,
 				C181205316F0165300DB17F3 /* MainMenu.xib */,
@@ -100,6 +113,24 @@
 				C181204D16F0165300DB17F3 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C181205B16F0168200DB17F3 /* OBMenuBarWindow */ = {
+			isa = PBXGroup;
+			children = (
+				C181205C16F0168200DB17F3 /* OBMenuBarWindow.h */,
+				C181205D16F0168200DB17F3 /* OBMenuBarWindow.m */,
+			);
+			path = OBMenuBarWindow;
+			sourceTree = "<group>";
+		};
+		C181205F16F0173300DB17F3 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				C181206016F0173300DB17F3 /* MenuBarIcon.png */,
+				C181206116F0173300DB17F3 /* MenuBarIcon2.png */,
+			);
+			path = Resouces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +187,8 @@
 				C181204916F0165300DB17F3 /* InfoPlist.strings in Resources */,
 				C181204F16F0165300DB17F3 /* Credits.rtf in Resources */,
 				C181205516F0165300DB17F3 /* MainMenu.xib in Resources */,
+				C181206216F0173300DB17F3 /* MenuBarIcon.png in Resources */,
+				C181206316F0173300DB17F3 /* MenuBarIcon2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +201,7 @@
 			files = (
 				C181204B16F0165300DB17F3 /* main.m in Sources */,
 				C181205216F0165300DB17F3 /* AppDelegate.m in Sources */,
+				C181205E16F0168200DB17F3 /* OBMenuBarWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
