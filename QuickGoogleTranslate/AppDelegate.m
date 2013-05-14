@@ -103,6 +103,12 @@
     }
 }
 
+#pragma mark - Terminate
+
+- (IBAction)terminate:(id)sender {
+    [[NSApplication sharedApplication] terminate:self];
+}
+
 #pragma mark - Hotkey
 
 - (IBAction) registerHotkey {
