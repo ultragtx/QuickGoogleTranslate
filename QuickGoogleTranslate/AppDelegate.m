@@ -130,6 +130,7 @@
     else {
         [NSApp activateIgnoringOtherApps:YES];
         [_window makeKeyAndOrderFront:_window];
+        [self obWindowDidAppear:_window];
     }
 }
 
