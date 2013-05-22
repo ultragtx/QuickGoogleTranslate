@@ -8,7 +8,7 @@ ScreenShot:
 ###Features:
 
 * Open Souce and **FREE**
-* OBMenuBarWindow Features, check [this](https://github.com/obolton/OBMenuBarWindow)
+* Features from [OBMenuBarWindow](https://github.com/obolton/OBMenuBarWindow)
 
 ###How to use:
 
