@@ -8,14 +8,22 @@ ScreenShot:
 ###Features:
 
 * Open Souce and **FREE**
-* OBMenuBarWindow Features check [this](https://github.com/obolton/OBMenuBarWindow)
+* OBMenuBarWindow Features, check [this](https://github.com/obolton/OBMenuBarWindow)
 
 ###How to use:
 
-* Click the Black Circle on the system staus bar to open.
-* Click the Round Button at the lower right corner to reload page.
+* Black round icon on the system staus bar: open window.
+* Bottom left: close 
+* Bottom right: refresh
+
+###Why use mobile version
+
+* faster for Chinese people
+* need time to learn css
 
 ###Shortcut/Hotkeys
+
+( Thanks to [DDHotKey](https://github.com/davedelong/DDHotKey) )
 
 ####Global:
 
@@ -26,8 +34,6 @@ ScreenShot:
 * Command + return: Translate (Same as click the Magnifier button)
 
 
-PS.
-You can actually use this to visit Google+
 
 
 
