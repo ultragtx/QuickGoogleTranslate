@@ -101,6 +101,7 @@
     if ([_webView.mainFrameURL isEqualToString:_urlStr]) {
         [_webView stringByEvaluatingJavaScriptFromString:_clickScript];
     }
+    [self focusInput];
 }
 
 #pragma mark - Terminate

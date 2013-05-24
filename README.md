@@ -33,6 +33,9 @@ ScreenShot:
 
 * Command + return: Translate (Same as click the Magnifier button)
 
+###TODO
+
+* Resize window to fit content
 
 
 
