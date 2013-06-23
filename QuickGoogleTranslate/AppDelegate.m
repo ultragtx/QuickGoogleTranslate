@@ -18,6 +18,7 @@
 
 @property (strong, nonatomic) NSString *focusScript;
 @property (strong, nonatomic) NSString *clickScript;
+@property (strong, nonatomic) NSString *disableLimitScript;
 @property (strong, nonatomic) NSString *urlStr;
 
 
@@ -43,6 +44,7 @@
 - (void)loadWebView {
     self.urlStr = @"http://translate.google.com/m/translate";
     self.focusScript = @"document.getElementsByClassName(\"orig\")[0].focus();";
+    self.disableLimitScript = @"t = document.getElementsByClassName(\"orig\")[0];t.setAttribute(\"maxlength\", 99999);t.setAttribute(\"rows\", 2);t.style.resize=\"vertical\"";
     self.clickScript = @"document.getElementsByClassName(\"CSS_WUI_BUTTON CSS_WUI_ENABLED CSS_WUI_BUTTON_IMPL CSS_WUI_NO_TAP_HIGHLIGHT go CSS_WUI_IMG_BUTTON\")[0].click()";
     
     [_webView setFrameLoadDelegate:self];
@@ -85,12 +87,19 @@
     }
 }
 
+- (void)disableLimit {
+    if ([_webView.mainFrameURL isEqualToString:_urlStr]) {
+        [_webView stringByEvaluatingJavaScriptFromString:_disableLimitScript];
+    }
+}
+
 #pragma mark - WebViewDelegate
 
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame {
 //    NSLog(@"load");
     if (sender.mainFrame == frame) {
         [self focusInput];
+        [self disableLimit];
     }
 }
 
