@@ -35,7 +35,7 @@
     self.window.highlightedMenuBarIcon = [NSImage imageNamed:@"MenuBarIcon2"];
     self.window.hasMenuBarIcon = YES;
     self.window.attachedToMenuBar = YES;
-    self.window.obDelegate = self;
+    self.window.delegate = self;
     
     [self registerHotkey];
     [self loadWebView];
@@ -67,7 +67,7 @@
 
 #pragma mark - obDelegate
 
-- (void)obWindowDidAppear:(OBMenuBarWindow *)window {
+- (void)obWindowDidAppear:(OBMenuBarWindow *)window { // Not a delegate anymore
     // simulate a mouse event to focus on the webview
     NSEvent *mouseEvent1 = [NSEvent mouseEventWithType:NSLeftMouseDown location:CGPointMake(1, 1) modifierFlags:0 timestamp:0 windowNumber:_window.windowNumber context:_window.graphicsContext eventNumber:0 clickCount:1 pressure:1];
     [NSApp postEvent:mouseEvent1 atStart:NO];
