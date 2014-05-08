@@ -353,7 +353,7 @@ NSString * const OBMenuBarWindowDidDetachFromMenuBar = @"OBMenuBarWindowDidDetac
         }
     }
     
-    [self setLevel:(isAttached ? NSPopUpMenuWindowLevel : NSNormalWindowLevel)];
+    [self setLevel:(isAttached ? NSSubmenuWindowLevel : NSNormalWindowLevel)];
     if (self.delegate != nil)
     {
         if (isAttached && [self.delegate respondsToSelector:@selector(windowDidAttachToMenuBar:)])
